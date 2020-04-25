@@ -15,7 +15,7 @@ header
     position: absolute;
     left: 0px;
     right: 0px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid slategray;
     padding: 0px 15px;
     z-index: 10;
 }
@@ -28,6 +28,44 @@ header
 {
     display: flex;
     flex-wrap: wrap;
+}
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.section-title h1
+{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0  0 10px;
+    color: black;
+    position: relative;
+}
+.section-title h1:before
+{
+    content: '';
+    left: 0;
+    height: 2px;
+    right: 30%;
+    background-color: slategray;
+    bottom: 0px;
+    position: absolute;
+}
+.text-center
+{
+    text-align: center!important;
+}
+.text-left
+{
+    text-align: left!important;
+}
+.text-right
+{
+    text-align: right!important;
 }
 header .row
 {
@@ -167,32 +205,6 @@ header .navbar ul li a.active::before
     padding: 100px 15px;
     background-color: whitesmoke;
 }
-.about-me .section-title
-{
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-}
-.about-me .section-title h1
-{
-    display: inline-block;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0  0 10px;
-    color: black;
-    position: relative;
-}
-.about-me .section-title h1:before
-{
-    content: '';
-    left: 0;
-    height: 2px;
-    right: 30%;
-    background-color: slategray;
-    bottom: 0px;
-    position: absolute;
-}
 .about-me .section-title p.small
 {
     display: block;
@@ -200,6 +212,10 @@ header .navbar ul li a.active::before
     color: #838383;
     font-weight: 400;
     letter-spacing: 2px;
+}
+.about-me .section-title h1:before
+{
+    left: 30%;
 }
 .text-uppercase
 {
@@ -310,12 +326,82 @@ header .navbar ul li a.active::before
 {
     color: black;
 }
-
-
-
-
-
-
+.services
+{
+    background: #d8ad76;
+    padding: 100px 0px 70px;
+}
+.services .section-title h1:before
+{
+    left: 30%;
+}
+.services .service-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services .service-content .box
+{
+    background-color: whitesmoke;
+    padding: 30px;
+    flex: 0 0 calc(33.33% - 15px);
+    min-width: calc(33.33% - 15px);;
+    margin-bottom: 30px;
+    border: 1px solid whitesmoke;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+.services .service-content .box:before
+{
+    content: '';
+    height: 2px;
+    background-color: slategray;
+    position: absolute;
+    bottom: 0px;
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all .5s ease;
+}
+.services .service-content .box:hover:before
+{
+    width: 100%;
+}
+.services .service-content .box .icon
+{
+    height: 60px;
+    width: 60px;
+    background-color: #d8ad76;
+    margin: 15px auto 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.services .service-content .box .icon .fa
+{
+    font-size: 25px;
+    color: whitesmoke;
+    line-height: 60px;
+}
+.services .service-content .box h5
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+.services .service-content .box p
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+    margin: 10px 0 10px;
+}
 
 
 
