@@ -213,10 +213,6 @@ header .navbar ul li a.active::before
     font-weight: 400;
     letter-spacing: 2px;
 }
-.about-me .section-title h1:before
-{
-    left: 30%;
-}
 .text-uppercase
 {
     text-transform: uppercase!important;
@@ -355,7 +351,7 @@ header .navbar ul li a.active::before
     position: relative;
     border-radius: 5px;
 }
-.services .service-content .box:before
+.services .service-content .box::before
 {
     content: '';
     height: 2px;
@@ -368,7 +364,7 @@ header .navbar ul li a.active::before
     margin: auto;
     transition: all .5s ease;
 }
-.services .service-content .box:hover:before
+.services .service-content .box:hover::before
 {
     width: 100%;
 }
@@ -402,10 +398,74 @@ header .navbar ul li a.active::before
     color: black;
     margin: 10px 0 10px;
 }
-
-
-
-
-
+.skills
+{
+    padding: 100px 15px;
+    background-color: whitesmoke;
+}
+.skills .skills-content
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 40px;
+}
+.skills .img
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.skills .img img
+{
+    width: 100%;
+    display: block;
+}
+.align-items-center
+{
+    align-items: center;
+}
+.skills .skills-content .section-title p
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+    margin: 15px 0 0;
+}
+.skills .skills-content .skill-box
+{
+    flex: 0 0 100%; 
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+.skills .skills-content .skill-box h6
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+}
+.skills .skills-content .skill-box .skill-bar
+{
+    height:5px;
+    position: relative;
+    background-color: whitesmoke;
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in
+{
+    background-color: slategray;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span
+{
+    color: slategrey;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+    top: -25px;
+}
 
 
