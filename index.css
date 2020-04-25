@@ -645,6 +645,45 @@ header .navbar ul li a.active::before
     max-height: 80%;
     display: block;
 }
+.message-text
+{
+    background-color: black;
+    padding: 40px 15px;
+}
+.message-text .text
+{
+    flex: 0 0 66.66%;
+    max-width: 0 0 66.66%;
+}
+.message-text .text h2
+{
+    font-size: 25px;
+    color: whitesmoke;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+}
+.message-text .button
+{
+    flex: 0 0 33.33%;
+    max-width: 0 0 33.33%;
+    text-align: right;
+}
+.message-text .button a
+{
+    border-radius: 4px;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
 
 
     
