@@ -58,8 +58,8 @@ const galleryItem=gallery.querySelectorAll(".item");
 //Testimonial slider
 const sliderContainer=document.querySelector(".testi-slider");
 const slides=sliderContainer.children;
-const containerWidht=sliderContainer.offsetWidth;
-const margin=15;
+const containerWidth=sliderContainer.offsetWidth;
+const margin=30;
 let itemPerSlide=0;
 let slideDots;
 
@@ -81,14 +81,14 @@ function load()
 }
 function start()
 {
-    totalWidht=0;
+    totalWidth=0;
     for(let i=0; i<slides.length; i++)
     {
-        slides[i].style.width=(containerWidht/itemPerSlide)-margin + "px";
+        slides[i].style.width=(containerWidth/itemPerSlide)-margin + "px";
         slides[i].style.margin=margin/2 + "px";
-        totalWidht+=containerWidht/itemPerSlide;
+        totalWidth+=containerWidth/itemPerSlide;
     }
-    sliderContainer.style.width=totalWidht + "px";
+    sliderContainer.style.width=totalWidth + "px";
     slideDots=Math.ceil(slides.length/itemPerSlide);
 
     for(let i=0; i<slideDots; i++)
@@ -122,7 +122,6 @@ function changeSlide(currentSlide){
             controlButtons[i].classList.remove("active")
     }
     controlButtons[currentSlide].classList.add("active")
-
     sliderContainer.style.marginLeft=-(containerWidth*currentSlide) + "px";
 }
 function autoPlay(){

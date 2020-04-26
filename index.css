@@ -19,6 +19,14 @@ header
     padding: 0px 15px;
     z-index: 10;
 }
+header.fixed
+{
+    background-color: rgba(245, 245, 245, 0.74);
+    position: fixed;
+    border-color: slategray;
+    animation: fixHeader .5s ease;
+    z-index: 100;
+}
 .container
 {
     max-width: 1140px;
@@ -758,7 +766,6 @@ header .navbar ul li a.active::before
     display: inline-block;
     margin: 10px 6px;
     cursor: pointer;
-    
 }
 .testimonials .testimonials-content .slide-controls div.active
 {
