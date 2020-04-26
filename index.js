@@ -125,7 +125,6 @@ function changeSlide(currentSlide){
     sliderContainer.style.marginLeft=-(containerWidth*currentSlide) + "px";
 }
 function autoPlay(){
-    console.log("call")
     if(autoSlide==slideDots-1){
         autoSlide=0;
     }
@@ -139,3 +138,34 @@ let timer=setInterval(autoPlay,5000);
 
 window.onload=load();
 
+// header fixed
+window.onscroll=function()
+{
+    const docScrollTop=document.documentElement.scrollTop;  
+    if(window.innerWidth>991)
+    {
+        if(docScrollTop>100)
+        {
+            document.querySelector("header").classList.add("fixed")
+        }
+        else
+        {
+            document.querySelector("header").classList.remove("fixed")
+        }
+    }
+}
+
+const navbar = document.querySelector(".navbar");
+    a=navbar.querySelectorAll("a");
+    
+    a.forEach(function(element)
+    {
+        element.addEventListener("click", function()
+        {
+            for(let i=0; i<a.lenght; i++)
+            {
+                a[i].classList.remove("active");
+            }
+            this.classList.add("active")
+        })
+    })

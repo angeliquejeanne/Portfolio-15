@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Simonetta&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+html
+{
+    scroll-behavior: smooth;
+}
 body
 {
 margin: 0;
@@ -26,6 +30,17 @@ header.fixed
     border-color: slategray;
     animation: fixHeader .5s ease;
     z-index: 100;
+}
+@keyframes fixHeader
+{
+    0%
+    {
+        transform: translateY(-100%);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
 }
 .container
 {
@@ -89,6 +104,10 @@ header .brand-name a
     text-transform: uppercase;
     position: relative;
 }
+header.fixed .brand-name a
+{
+    color: #d8ad76;
+}
 header .navbar ul
 {
     list-style: none;
@@ -110,7 +129,11 @@ header .navbar ul li a
     font-weight: 600;
     position: relative;
 }
-header .navbar ul li a::before
+header.fixed .navbar ul li a
+{
+    color: black;
+}
+header .navbar ul li a:before
 {
     content: '';
     height: 3px;
@@ -121,12 +144,16 @@ header .navbar ul li a::before
     bottom: -1px;
     transition: all .5s ease;
 }
-header .navbar ul li a:hover::before
+header.fixed .navbar ul li a:before
+{
+    background-color: #d8ad76;
+}
+header .navbar ul li a:hover:before
 {
     width: 100%;
     left: 0;
 }
-header .navbar ul li a.active::before
+header .navbar ul li a.active:before
 {
     width: 100%;
     left: 0;
@@ -956,5 +983,51 @@ header .navbar ul li a.active::before
     background-color: black;
     color: whitesmoke;
 }
-
-
+footer
+{
+    background-color: black;
+    padding: 70px 15px;
+}
+footer .logo
+{
+    color: whitesmoke;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+}
+footer .social
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+footer .social a
+{
+    color: #d8ad76;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 12px;
+    transition: all .5s ease;
+    font-size: 20px;
+}
+footer .social a:hover
+{
+    color: whitesmoke;
+}
+.copyright
+{
+    background-color: black;
+    border-top: 1px solid slategray;
+    padding: 15px;
+}
+.copyright p
+{
+    color: whitesmoke;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
