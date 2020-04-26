@@ -1,0 +1,168 @@
+@media(max-width: 991px)
+{
+    .home .home-content .block h1
+    {
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 767px)
+{
+    .home .home-content .block h1
+    {
+        font-size: 40px;
+    }
+    .home .home-content .block h3
+    {
+        font-size: 25px;
+    }
+    header
+    {
+        padding: 15px;
+        position: fixed;
+        background-color: rgba(245, 245, 245, 0.74);
+        border: none;    
+        border-bottom: 1px solid #d8ad76;
+    }
+    header .brand-name a 
+    {
+        color: black;
+    }
+    .ham-burger .fa
+    {
+        display: inline-block;
+    }
+    .navbar
+    {
+        position: absolute;
+        background-color: whitesmoke;
+        width: 100%;
+        left: 0px;
+        top: 60px;
+        padding: 15px;
+        border-top: 1px solid #d8ad76;
+        display: none;
+        border-bottom: 1px solid #d8ad76;
+    }
+    .navbar.show
+    {
+        display: block;
+    }
+    header .navbar ul li
+    {
+        display: block;
+        margin-left: 0;
+    }
+    header .navbar ul li a
+    {
+        line-height: 42px;
+        color: black;
+    }
+    header .navbar ul li a::before
+    {
+        background-color: #d8ad76;
+    }
+    .about-me .about-content .text
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    .about-me .about-content .img
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .services .service-content .box
+    {
+        background-color: whitesmoke;
+        padding: 30px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .skills .skills-content
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0px;
+    }
+    .skills .img
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .portfolio .portfolio-gallery .item
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+        position: relative;
+        padding: 8px;
+    }
+    .message-text .text
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .message-text .button
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: left;
+        padding-top: 20px;
+    }
+    .blogs .blogs-content .box
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact-us .contact-form
+    {
+        padding: 40px 20px;  
+    }
+    .contact-us .contact-form .col-6
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .home .home-content .block h1
+    {
+        font-size: 30px;
+    }
+    .home .home-content .block h3
+    {
+        font-size: 20px;
+    }
+    .home .home-content .block 
+    {
+        padding-left: 20px;
+    }
+    .portfolio .portfolio-gallery .item
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-me .about-content .text .info .list p
+    {
+        margin: 0;
+        flex: 0 0 100%;
+    }
+    .testimonials .testimonials-content .testi-slider
+    {
+        text-align: center;
+    }
+    .testimonials .testimonials-content .testi-slider .slide .img
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .testimonials .testimonials-content .testi-slider .slide 
+    {
+        flex-wrap: wrap;
+    }
+}

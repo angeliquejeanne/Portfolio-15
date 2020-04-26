@@ -29,7 +29,7 @@ header.fixed
     position: fixed;
     border-color: slategray;
     animation: fixHeader .5s ease;
-    z-index: 100;
+    z-index: 11;
 }
 @keyframes fixHeader
 {
@@ -364,7 +364,7 @@ header .navbar ul li a.active:before
 .services
 {
     background: #d8ad76;
-    padding: 100px 0px 70px;
+    padding: 100px 15px 70px;
 }
 .services .section-title h1:before
 {
@@ -1030,4 +1030,18 @@ footer .social a:hover
     text-align: center;
     font-weight: 400;
     font-size: 15px;
+}
+.ham-burger .fa
+{
+    font-size: 20px;
+    height: 30px;
+    width: 35px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    border: 1px solid slategray;
 }
