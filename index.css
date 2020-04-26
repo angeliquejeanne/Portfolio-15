@@ -860,5 +860,101 @@ header .navbar ul li a.active::before
     color: black;
     border-color: black;
 }
+/*contact section*/
+.contact-us
+{
+    padding: 100px 15px;
+    background-color: #d8ad76;
+}
+.contact-us .section-title h1:before
+{
+    left: 30%;
+}
+.contact-us .contact-form
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 50px;
+    border: 1px solid slategray;
+    border-radius: 4px;
+}
+.contact-us .contact-form .text
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+.contact-us .contact-form .text h2
+{
+    font-size: 26px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+.contact-us .contact-form .text p
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: slategray;
+    margin: 0;
+}
+.contact-us .contact-form .space-between
+{
+    justify-content: space-between;
+}
+.contact-us .contact-form .col-6
+{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+}
+.contact-us .contact-form .col-12
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact-us .contact-form .form-control
+{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid slategray;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.contact-us .contact-form textarea.form-control
+{
+    height: 140px;
+}
+.contact-us .contact-form .form-control::placeholder
+{
+    color: slategray;
+}
+.contact-us .contact-form .button 
+{
+    background-color: #d8ad76;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact-us .contact-form .button a
+{
+    border-radius: 4px;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: whitesmoke;
+    box-shadow: 0 10px 15px rgba(112, 128, 144, 0.692);
+}
+.contact-us .contact-form .button a:hover
+{
+    background-color: black;
+    color: whitesmoke;
+}
 
 
