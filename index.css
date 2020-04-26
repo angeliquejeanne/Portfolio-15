@@ -213,6 +213,10 @@ header .navbar ul li a.active::before
     padding: 100px 15px;
     background-color: whitesmoke;
 }
+.about-me .section-title h1:before
+{
+    left: 30%;
+}
 .about-me .section-title p.small
 {
     display: block;
@@ -771,7 +775,90 @@ header .navbar ul li a.active::before
 {
     background-color: black;
 }
-
-
+.blogs
+{
+    background-color: whitesmoke;
+    padding: 100px 15px;
+}
+.blogs .section-title h1:before
+{
+    left: 30%;
+}
+.blogs .blogs-content
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blogs .blogs-content .box
+{
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+}
+.blogs .blogs-content .box .img
+{
+    overflow: hidden;
+}
+.blogs .blogs-content .box .img img
+{
+    width: 100%;
+    display: block;
+    transition: all .5s ease;
+}
+.blogs .blogs-content .box:hover .img img
+{
+    transform: scale(1.1);
+}
+.blogs .blogs-content .box .info
+{
+    padding: 10px 0;
+}
+.blogs .blogs-content .box .info span
+{
+    font-size: 12px;
+    color: slategrey;
+    display: inline-block;
+}
+.blogs .blogs-content .box .info span:nth-child(2)
+{
+    border-left: 1px solid slategrey;
+    padding-left: 8px;
+    margin-left: 10px;
+}
+.blogs .blogs-content .box h3
+{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin: 0 0 10px;
+    padding: 0;
+}
+.blogs .blogs-content .box p
+{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+    margin: 0 0 10px;
+}
+.blogs .blogs-content .box a
+{
+    font-size: 14px;
+    color: #d8ad76;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid #d8ad76;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.blogs .blogs-content .box a:hover
+{
+    color: black;
+    border-color: black;
+}
 
 
